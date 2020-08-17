@@ -2109,7 +2109,12 @@ ol {
 	}
 	.section-title h2{
 		margin-bottom: 10px;
-		font-size: 55px;
+		font-size: 45px;
+		padding: 0 5px;
+	}
+	.section-title h1{
+		margin-bottom: 10px;
+		font-size: 50px;
 		padding: 0 5px;
 	}
 }

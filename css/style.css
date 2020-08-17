@@ -2107,4 +2107,9 @@ ol {
 	.projects-slider {
 		padding: 0 15px;
 	}
+	.section-title h2{
+		margin-bottom: 10px;
+		font-size: 55px;
+		padding: 0 5px;
+	}
 }

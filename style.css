@@ -637,6 +637,7 @@ ol {
 }
 
 .slide-content {
+	max-width: 690px;
 	margin-left: 350px;
 	margin-bottom: 50px;
 	padding-left: 190px;
@@ -1111,6 +1112,20 @@ ol {
 	color: #baff00;
 }
 
+.page-title-h2 {
+	height: 445px;
+	padding-top: 200px;
+}
+
+.page-title-h2 .header-title {
+	font-size: 82px;
+	color: rgb(71, 71, 71);
+}
+
+.page-title-h2 .header-title span {
+	background: none;
+	color: #baff00;
+}
 /*----------------------------------------*/
 /*  About page CSS
 /*----------------------------------------*/

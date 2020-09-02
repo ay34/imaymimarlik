@@ -15,7 +15,7 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -444,8 +444,11 @@ ol {
 .logo-area {
 	float: left;
 	display: inline-block;
-	background: #121212;
-	padding: 20px 60px 30px;
+	background: #000000;
+	padding: 20px 60px 20px;
+}
+.imay-logo{
+	max-width: 100%;
 }
 
 .phone-number {
@@ -464,17 +467,28 @@ ol {
 }
 
 .nav-menu {
-	display: inline-block;
 	float: right;
 }
 
-.nav-menu ul {
-	list-style: none;
+.nav-menu >ul {
+	display: flex;
 }
 
 .nav-menu ul li {
-	display: inline;
+	display: block;
 }
+
+.nav-menu ul li ul{
+	display: none;
+}
+
+.nav-menu ul li:hover ul{
+	display: block;
+	transition: 500ms;
+	position: absolute;
+}
+
+
 
 .nav-menu ul li a {
 	display: inline-block;
@@ -510,6 +524,66 @@ ol {
 }
 
 /*---------------------------------------*/
+/*  Two Row in ArchitecturePage
+/*----------------------------------------*/
+
+.two-row{
+	display: inline-flex;
+}
+
+.arc-service-title{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.middle-title{
+	float: left;
+	width: 40%;
+}
+
+.arc-text{
+	float: right;
+	width: 60%;
+	padding-left: 100px;
+}
+
+.arc-img{
+	float: right;
+	width: 60%;
+	padding: 30px;
+}
+
+.h2-title{
+	font-size: 50px;
+}
+
+.list-text{
+	text-decoration: none;
+}
+
+.container{
+	padding: 30px;
+}
+
+.arc-readmore{
+	background-color: transparent;
+	color: green;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 4px;
+	text-decoration: none;	
+}
+
+.arc-readmore:hover{
+	background-color: red;
+	color: white;
+	border-radius: 2px;
+	font-size: 16px;
+	transition: all 0.4s;	
+}
+
+
+/*---------------------------------------*/
 /*  Hero Section CSS
 /*----------------------------------------*/
 .hero-section {
@@ -522,7 +596,7 @@ ol {
 	position: absolute;
 	width: 100px;
 	height: 100%;
-	background: #121212;
+	background: rgb(0, 0, 0);
 	z-index: 20;
 }
 
@@ -1845,6 +1919,7 @@ ol {
 		font-size: 13px;
 		padding: 37px 7px 5px;
 	}
+
 	.phone-number {
 		font-size: 12px;
 		margin-right: 10px;
@@ -1958,6 +2033,11 @@ ol {
 		border-bottom: 1px solid #202020;
 		margin-right: 0;
 	}
+
+	.nav-menu >ul {
+		display: block;
+	}
+
 	.nav-menu ul li a:after {
 		left: 20px;
 	}
@@ -2066,12 +2146,12 @@ ol {
 /* small mobile :320px. */
 @media only screen and (max-width: 479px) {
 	.logo-area {
-		padding: 20px 15px 20px;
+		padding: 0px 15px 20px;
 		max-width: 210px;
 		max-height: 75px;
 	}
 	.header-area {
-		background: #121212;
+		background: #000000;
 		padding-right: 66px;
 	}
 	.nav-menu {
